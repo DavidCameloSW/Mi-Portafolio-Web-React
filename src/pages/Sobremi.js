@@ -50,9 +50,9 @@ function SobreMi() {
                             </div>
                             <div className="carousel-item">
                                 <div className="d-flex align-items-center justify-content-center bg-dark text-white" style={{ height: "200px" }}>
-                                    <FaBootstrap size={100} className="mx-3" style={{ color: "#7952B3" }}/>
+                                    <FaBootstrap size={100} className="mx-3" style={{ color: "#7952B3" }} />
                                     <SiMysql size={100} className="mx-3" style={{ color: "#00618A" }} />
-                                    <SiDotnet size={100} className="mx-3" style={{ color: "#512BD4"}} />
+                                    <SiDotnet size={100} className="mx-3" style={{ color: "#512BD4" }} />
                                 </div>
                             </div>
                         </div>
@@ -84,18 +84,15 @@ function SobreMi() {
                     </p>
                 </div>
 
-                <div className="col-sm-auto d-flex ">
-                    <div className="profile-img-box">
-                        <img
-                            src={perfil}
-                            alt="Perfil"
-                            className="img-fluid rounded-circle shadow-lg"
-                            style={{ maxWidth: '450px', objectFit: 'auto' }} />
-                    </div>
-                </div>
+                <img
+                    src={perfil}
+                    alt="Perfil"
+                    className="img-fluid rounded-circle shadow-lg"
+                    style={{ maxWidth: '450px', width: '100%', height: 'auto' }}
+                />
             </div>
         </section>
-        
+
     );
 }
 
