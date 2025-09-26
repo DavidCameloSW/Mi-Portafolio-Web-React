@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Mi-Portafolio-Web-React/static/css/main.3e80e732.css",
+    "main.js": "/Mi-Portafolio-Web-React/static/js/main.069abfc0.js",
+    "static/js/453.4e3d1a3e.chunk.js": "/Mi-Portafolio-Web-React/static/js/453.4e3d1a3e.chunk.js",
+    "static/media/devicon.svg?qd25fp": "/Mi-Portafolio-Web-React/static/media/devicon.10e33a3796c872bc312e.svg",
+    "static/media/devicon.eot?qd25fp": "/Mi-Portafolio-Web-React/static/media/devicon.bb0c9256aeb8aecf3ba6.eot",
+    "static/media/devicon.woff?qd25fp": "/Mi-Portafolio-Web-React/static/media/devicon.e4d86e063cb00ba23862.woff",
+    "static/media/devicon.ttf?qd25fp": "/Mi-Portafolio-Web-React/static/media/devicon.685a2d4fcee813854715.ttf",
+    "static/media/CVDCSDEV.pdf": "/Mi-Portafolio-Web-React/static/media/CVDCSDEV.d34ab28fc8a571ddfe8a.pdf",
+    "static/media/bootstrap-icons.woff?": "/Mi-Portafolio-Web-React/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
+    "static/media/perfil.jpg": "/Mi-Portafolio-Web-React/static/media/perfil.df043c7634a9bf29c567.jpg",
+    "static/media/bootstrap-icons.woff2?": "/Mi-Portafolio-Web-React/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
+    "index.html": "/Mi-Portafolio-Web-React/index.html",
+    "main.3e80e732.css.map": "/Mi-Portafolio-Web-React/static/css/main.3e80e732.css.map",
+    "main.069abfc0.js.map": "/Mi-Portafolio-Web-React/static/js/main.069abfc0.js.map",
+    "453.4e3d1a3e.chunk.js.map": "/Mi-Portafolio-Web-React/static/js/453.4e3d1a3e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e80e732.css",
+    "static/js/main.069abfc0.js"
+  ]
+}
