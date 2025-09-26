@@ -8,15 +8,15 @@ const EMAILJS_CONFIG = {
 };
 
 export const contactAPI = {
-  submitContact: (contactData) => 
+  submitContact: (contactData) =>
     emailjs.send(
       EMAILJS_CONFIG.SERVICE_ID,
       EMAILJS_CONFIG.TEMPLATE_ID,
       {
-        from_name: contactData.nombre,
-        from_email: contactData.email, 
-        subject: contactData.asunto,
-        message: contactData.mensaje
+        from_name: contactData.name,     
+        from_email: contactData.email,    
+        subject: contactData.subject,     
+        message: contactData.message      
       },
       EMAILJS_CONFIG.PUBLIC_KEY
     )
