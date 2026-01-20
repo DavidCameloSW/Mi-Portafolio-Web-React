@@ -1,25 +1,36 @@
-import emailjs from '@emailjs/browser';
+import axios from 'axios';
 
-// REEMPLAZA ESTOS VALORES CON LOS TUYOS:
-const EMAILJS_CONFIG = {
-  SERVICE_ID: 'service_dcs',  // ← Tu Service ID
-  TEMPLATE_ID: 'template_zpl0wju',  // ← Template ID que tienes
-  PUBLIC_KEY: 'E4KN071IEi7thno3l'  // ← Tu Public Key
-};
+// URL condicional para desarrollo/producción
+const API_BASE_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://tu-backend-futuro.com/api'  // Cuando subas el backend
+  : 'http://localhost:5000/api';          // Desarrollo (tu PC)
+
+const api = axios.create({
+  baseURL: API_BASE_URL,
+  timeout: 10000,
+  headers: {
+    'Content-Type': 'application/json',
+  }
+});
+
+// Interceptor para manejar errores
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.code === 'ECONNABORTED') {
+      throw new Error('El servidor tardó demasiado en responder');
+    }
+    
+    if (!error.response) {
+      throw new Error('Error de conexión: Verifica tu conexión a internet');
+    }
+    
+    throw error;
+  }
+);
 
 export const contactAPI = {
-  submitContact: (contactData) =>
-    emailjs.send(
-      EMAILJS_CONFIG.SERVICE_ID,
-      EMAILJS_CONFIG.TEMPLATE_ID,
-      {
-        from_name: contactData.name,     
-        from_email: contactData.email,    
-        subject: contactData.subject,     
-        message: contactData.message      
-      },
-      EMAILJS_CONFIG.PUBLIC_KEY
-    )
+  submitContact: (contactData) => api.post('/contact/submit', contactData)
 };
 
-// Elimina todo lo de axios que tenías antes
+export default api;

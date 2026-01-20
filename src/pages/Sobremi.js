@@ -65,7 +65,7 @@ function SobreMi() {
                             data-bs-target="#customCarousel"
                             data-bs-slide="prev"
                         >
-                            <FaArrowLeft size={30} color="black" />
+                          
                         </button>
 
                         {/* Botón para pasar iconos */}
@@ -75,7 +75,7 @@ function SobreMi() {
                             data-bs-target="#customCarousel"
                             data-bs-slide="next"
                         >
-                            <FaArrowRight size={30} color="black" />
+                     
                         </button>
                     </div>
 

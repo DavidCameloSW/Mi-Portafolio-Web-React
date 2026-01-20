@@ -58,6 +58,7 @@ function Proyectos() {
             CSS: '#1572b6',
             'C#': '#5e2091ff',
             PHP: '#5c70b3ff',
+            JavaScript: '#f1e05aff',
         };
         return colors[language]
     };
