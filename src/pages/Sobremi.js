@@ -1,6 +1,5 @@
 import perfil from '../assets/perfil.jpg';
 import 'devicon/devicon.min.css';
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import 'bootstrap-icons/font/bootstrap-icons.css';
